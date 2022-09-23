@@ -50,7 +50,7 @@ public class TicketMachine {
         this.saldo -= precoDoBilhete;
         
         String result = "*****************\n";
-        result += "*** R$ " + saldo + ",00 ****\n";
+        result += "*** R$ " + getSaldo() + ",00 ****\n";
         result += "*****************\n";
         return result;
     }

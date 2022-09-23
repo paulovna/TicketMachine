@@ -9,9 +9,9 @@ public class PapelMoeda {
     protected float valor;
     protected int quantidade;
 
-    public PapelMoeda(float valor, int quantidade) {
+    public PapelMoeda(float valor) {
         this.valor = valor;
-        this.quantidade = quantidade;
+        this.quantidade = 0;
     }
 
     public int getValor() {

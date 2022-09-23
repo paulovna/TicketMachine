@@ -1,5 +1,6 @@
 package br.calebe.ticketmachine.core;
 
+import java.util.HashSet;
 import java.util.Iterator;
 
 /**
@@ -9,39 +10,40 @@ import java.util.Iterator;
 class Troco {
 
     protected PapelMoeda[] papeisMoeda;
-
+    protected double[] moedas;
+    
     public Troco(int valor) {
-        papeisMoeda = new PapelMoeda[6];
-        int count = 0;
-        while (valor % 100 != 0) {
-            count++;
-        }
-        papeisMoeda[5] = new PapelMoeda(100, count);
-        count = 0;
-        while (valor % 50 != 0) {
-            count++;
-        }
-        papeisMoeda[4] = new PapelMoeda(50, count);
-        count = 0;
-        while (valor % 20 != 0) {
-            count++;
-        }
-        papeisMoeda[3] = new PapelMoeda(20, count);
-        count = 0;
-        while (valor % 10 != 0) {
-            count++;
-        }
-        papeisMoeda[2] = new PapelMoeda(10, count);
-        count = 0;
-        while (valor % 5 != 0) {
-            count++;
-        }
-        papeisMoeda[1] = new PapelMoeda(5, count);
-        count = 0;
-        while (valor % 2 != 0) {
-            count++;
-        }
-        papeisMoeda[1] = new PapelMoeda(2, count);
+        papeisMoeda[5] = new PapelMoeda(100);
+        int quantidade = (int)valor/100;
+        papeisMoeda[5].setQuantidade(quantidade);
+        valor = valor-100*quantidade;
+        
+        papeisMoeda[4] = new PapelMoeda(50);
+        quantidade = (int)valor/50;
+        papeisMoeda[4].setQuantidade(quantidade);
+        valor = valor-50*quantidade;
+        
+        papeisMoeda[3] = new PapelMoeda(20);
+        quantidade = (int)valor/20;
+        papeisMoeda[3].setQuantidade(quantidade);
+        valor = valor-20*quantidade;
+        
+        papeisMoeda[2] = new PapelMoeda(10);
+        quantidade = (int)valor/10;
+        papeisMoeda[2].setQuantidade(quantidade);
+        valor = valor-10*quantidade;
+        
+        papeisMoeda[1] = new PapelMoeda(5);
+        quantidade = (int)valor/5;
+        papeisMoeda[1].setQuantidade(quantidade);
+        valor = valor-5*quantidade;
+        
+        papeisMoeda[0] = new PapelMoeda(2);
+        quantidade = (int)valor/2;
+        papeisMoeda[0].setQuantidade(quantidade);
+        valor = valor-2*quantidade;
+        
+        
     }
 
     public Iterator<PapelMoeda> getIterator() {

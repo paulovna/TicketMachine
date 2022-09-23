@@ -14,7 +14,7 @@ public class PapelMoeda {
         this.quantidade = 0;
     }
 
-    public int getValor() {
+    public float getValor() {
         return valor;
     }
 

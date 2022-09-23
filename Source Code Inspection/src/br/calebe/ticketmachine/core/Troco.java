@@ -43,7 +43,29 @@ class Troco {
         papeisMoeda[0].setQuantidade(quantidade);
         valor = valor-2*quantidade;
         
+        valor = valor*100;
         
+        quantidade = (int)valor/100;
+        moedas[5] = quantidade;
+        valor = valor-100*quantidade;
+        
+        quantidade = (int)valor/50;
+        moedas[4] = quantidade;
+        valor = valor-50*quantidade;
+        
+        quantidade = (int)valor/25;
+        moedas[3] = quantidade;
+        valor = valor-25*quantidade;
+        
+        quantidade = (int)valor/10;
+        moedas[2] = quantidade;
+        valor = valor-10*quantidade;
+        
+        quantidade = (int)valor/5;
+        moedas[1] = quantidade;
+        valor = valor-5*quantidade;
+        
+        moedas[0] = valor;
     }
 
     public Iterator<PapelMoeda> getIterator() {

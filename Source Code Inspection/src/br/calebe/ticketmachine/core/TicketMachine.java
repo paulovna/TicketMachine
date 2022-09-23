@@ -19,7 +19,7 @@ public class TicketMachine {
         this.saldo = 0;
     }
 
-    public int inserir(int quantia) throws PapelMoedaInvalidaException {
+    public void inserir(int quantia) throws PapelMoedaInvalidaException {
         System.out.println("Aguarde alguns instantes, por favor!");
         boolean achou = false;
         for (int i = 0; i < papelMoeda.length && !achou; i++) {
@@ -31,7 +31,7 @@ public class TicketMachine {
             throw new PapelMoedaInvalidaException();
         }
         this.saldo += quantia;
-        return saldo;
+        System.out.printf("Saldo atual: %d", getSaldo());
     }
 
     public int getSaldo() {

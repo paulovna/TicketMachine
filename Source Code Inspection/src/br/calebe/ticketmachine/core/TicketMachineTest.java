@@ -9,4 +9,9 @@ public class TicketMachineTest {
         TicketMachine tm = new TicketMachine(5);
         assertEquals(tm.precoDoBilhete, 5);;
     }  
+    @Test
+    public void instanciaSaldo(){
+        TicketMachine tm = new TicketMachine(5);
+        assertEquals(tm.saldo, 0);;
+    }
 }

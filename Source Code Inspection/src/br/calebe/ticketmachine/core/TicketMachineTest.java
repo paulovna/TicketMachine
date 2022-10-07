@@ -39,4 +39,9 @@ public class TicketMachineTest {
         tm.inserir(5);
         fail(tm.imprimir());
     }
+    @Test
+    public void impressaoInvalida(){
+        TicketMachine tm = new TicketMachine(3);
+        fail(tm.imprimir());
+    }
 }

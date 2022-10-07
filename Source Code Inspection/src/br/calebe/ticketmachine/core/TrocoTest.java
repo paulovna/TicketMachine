@@ -33,6 +33,35 @@ public class TrocoTest {
         Troco troco = new Troco(102.89);
         assertEquals(troco.papeisMoeda[0].getQuantidade(),1);;
     }
-
+    @Test
+    public void testeQuantidadeMoedas100(){
+        Troco troco = new Troco(101.89);
+        assertEquals(troco.moedas[5],1,0.001);;
+    }
+    @Test
+    public void testeQuantidadeMoedas050(){
+        Troco troco = new Troco(101.89);
+        assertEquals(troco.moedas[4],1,0.001);;
+    }
+    @Test
+    public void testeQuantidadeMoedas025(){
+        Troco troco = new Troco(101.89);
+        assertEquals(troco.moedas[3],1,0.001);;
+    }
+    @Test
+    public void testeQuantidadeMoedas010(){
+        Troco troco = new Troco(101.99);
+        assertEquals(troco.moedas[2],2,0.001);;
+    }
+    @Test
+    public void testeQuantidadeMoedas005(){
+        Troco troco = new Troco(101.80);
+        assertEquals(troco.moedas[1],1,0.1);;
+    }
+    @Test
+    public void testeQuantidadeMoedas001(){
+        Troco troco = new Troco(101.89);
+        assertEquals(troco.moedas[0],4,0.001);;
+    }
 }
 

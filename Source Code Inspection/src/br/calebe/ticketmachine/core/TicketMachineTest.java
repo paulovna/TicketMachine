@@ -33,4 +33,10 @@ public class TicketMachineTest {
         int troco = tm.getTroco();
         assertEquals(troco, 2);;
     }
+    @Test
+    public void impressaoValida(){
+        TicketMachine tm = new TicketMachine(3);
+        tm.inserir(5);
+        fail(tm.imprimir());
+    }
 }

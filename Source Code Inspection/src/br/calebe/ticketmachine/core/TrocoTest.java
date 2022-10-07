@@ -4,32 +4,32 @@ import org.junit.Test;
 
 public class TrocoTest {
     @Test
-    public void testeQuantidade100(){
+    public void testeQuantidadeNotas100(){
         Troco troco = new Troco(126.89);
         assertEquals(troco.papeisMoeda[5].getQuantidade(),1);;
     }
     @Test
-    public void testeQuantidade50(){
+    public void testeQuantidadeNotas50(){
         Troco troco = new Troco(176.89);
         assertEquals(troco.papeisMoeda[4].getQuantidade(),1);;
     }
     @Test
-    public void testeQuantidade20(){
+    public void testeQuantidadeNotas20(){
         Troco troco = new Troco(126.89);
         assertEquals(troco.papeisMoeda[3].getQuantidade(),1);;
     }
     @Test
-    public void testeQuantidade10(){
+    public void testeQuantidadeNotas10(){
         Troco troco = new Troco(111.89);
         assertEquals(troco.papeisMoeda[2].getQuantidade(),1);;
     }
     @Test
-    public void testeQuantidade5(){
+    public void testeQuantidadeNotas5(){
         Troco troco = new Troco(106.89);
         assertEquals(troco.papeisMoeda[1].getQuantidade(),1);;
     }
     @Test
-    public void testeQuantidade2(){
+    public void testeQuantidadeNotas2(){
         Troco troco = new Troco(102.89);
         assertEquals(troco.papeisMoeda[0].getQuantidade(),1);;
     }

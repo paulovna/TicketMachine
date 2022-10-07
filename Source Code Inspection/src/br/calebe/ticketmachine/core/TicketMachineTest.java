@@ -20,4 +20,9 @@ public class TicketMachineTest {
         tm.inserir(5);
         assertEquals(tm.saldo, 5);;
     }
+    public void insercaoInvalida(){
+        TicketMachine tm = new TicketMachine(5);
+        tm.inserir(7);
+        assertEquals(tm.saldo, 7);;
+    }
 }

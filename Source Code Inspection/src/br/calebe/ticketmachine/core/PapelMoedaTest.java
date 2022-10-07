@@ -8,4 +8,10 @@ public class PapelMoedaTest {
         PapelMoeda papelMoeda = new PapelMoeda(5);
         assertEquals(papelMoeda.getQuantidade(),0);;
     }
+    @Test
+    public void verificarValor5(){
+        PapelMoeda papelMoeda = new PapelMoeda(5);
+        assertEquals(papelMoeda.getValor(),5,0.001);;
+    }
+    
 }

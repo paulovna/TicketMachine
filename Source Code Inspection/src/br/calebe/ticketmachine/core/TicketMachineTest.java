@@ -14,4 +14,10 @@ public class TicketMachineTest {
         TicketMachine tm = new TicketMachine(5);
         assertEquals(tm.saldo, 0);;
     }
+    @Test
+    public void insercaoValida(){
+        TicketMachine tm = new TicketMachine(5);
+        tm.inserir(5);
+        assertEquals(tm.saldo, 5);;
+    }
 }

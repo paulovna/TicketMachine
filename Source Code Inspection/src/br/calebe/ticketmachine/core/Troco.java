@@ -7,15 +7,15 @@ import java.util.Iterator;
  *
  * @author Calebe de Paula Bianchini
  */
-class Troco {
+public class Troco {
 
-    protected PapelMoeda[] papeisMoeda;
-    protected double[] moedas;
+    public PapelMoeda papeisMoeda[] = new PapelMoeda[6];
+    public double moedas[] = new double[6];
     
-    public Troco(int valor) {
+    public Troco(double valor) {
         papeisMoeda[5] = new PapelMoeda(100);
         int quantidade = (int)valor/100;
-        papeisMoeda[5].setQuantidade(quantidade);
+        this.papeisMoeda[5].setQuantidade(quantidade);
         valor = valor-100*quantidade;
         
         papeisMoeda[4] = new PapelMoeda(50);

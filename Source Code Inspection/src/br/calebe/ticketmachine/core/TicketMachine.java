@@ -12,7 +12,7 @@ public class TicketMachine {
 
     protected int precoDoBilhete;
     protected int saldo;
-    protected int[] papelMoeda = {2, 5, 10, 20, 50, 100};
+    protected int papelMoeda[] = {2, 5, 10, 20, 50, 100};
 
     public TicketMachine(int precoDoBilhete) {
         this.precoDoBilhete = precoDoBilhete;

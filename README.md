@@ -1,2 +1,2 @@
 # TicketMachine
-Atividade de Simulação e Teste de Sotware com códgo da aplicação apresentando problemas
+Atividade de Simulação e Teste de Sotware com a finalidade de verificar e corrigir o código da aplicação apresentando problemas
